@@ -24,7 +24,7 @@ const CreatePost = () => {
         if(form.prompt && form.name && form.photo ){
             try{
                 setGeneratingImg(true);
-                const response = await axios.post("http://localhost:8080/api/v1/post", form);
+                const response = await axios.post("https://emberglow.onrender.com/api/v1/post", form);
                 // console.log("response", response);
                 navigate("/");
 
